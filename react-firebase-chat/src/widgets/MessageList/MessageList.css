@@ -1,0 +1,62 @@
+.ml {
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse; 
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; 
+  background: #fff;
+  padding: 16px 16px 8px;
+  background-image: radial-gradient(#f7f7f7 1px, transparent 1px);
+  background-size: 16px 16px;
+  background-position: 0 0;
+}
+
+
+.ml-day {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+  color: #555;
+}
+
+.ml-day::before,
+.ml-day::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #e6e6e6;
+}
+
+.ml-row {
+  display: flex;
+  margin: 6px 0;
+}
+
+.ml-row.me {
+  justify-content: flex-end;
+}
+
+.ml-row.other {
+  justify-content: flex-start;
+}
+
+.ml-bubble {
+  max-width: min(72%, 640px);
+  background: var(--bubble);
+  padding: 10px 12px;
+  border-radius: 14px;
+  position: relative;
+  color: #111;
+}
+
+.ml-row.me .ml-bubble {
+  background: var(--bubbleMe);
+}
+
+.ml-bubble time {
+  display: block;
+  text-align: right;
+  margin-top: 4px;
+  font-size: 11px;
+  color: #7a7a7a;
+}
