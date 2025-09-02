@@ -1,0 +1,14 @@
+:root {
+  --font-main: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
